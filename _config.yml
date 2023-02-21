@@ -1,0 +1,7 @@
+# Site settings
+title: Your Site Title
+description: Your site description
+url: https://your-site-url.com
+
+# Build settings
+theme: your-theme-name
