@@ -17,23 +17,12 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <h1 class="project-name">Offer Acceptance in the Freight Industry</h1>
-          </a>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#">Report</a>
-            <a class="navbar-item" href="#">Project Repository</a>
-            <a class="navbar-item" href="#">Website Repository</a>
-          </div>
-        </div>
-      </nav>
+      <h1 class="project-name">Offer Acceptance in the Freight Industry</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View Project GitHub</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View Report</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View Website GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
