@@ -58,7 +58,8 @@
 
        <img src="/assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
        <img src="./assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
-             <img src="../assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
+       <img src="../assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
 
 
       <img src="https://github.com/radumanea23/UCSDFlockFreightCapstone/assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
@@ -73,15 +74,31 @@
         <div>The model will comprise of 3 sub-models that together advise the decision making on whether an offer is acceptable or not, for a given order</div>
         
 
-        <h3 class="Offer Amount Estimation Model">Offer Amount Estimation Model</h3>
+        <h4 class="Offer Amount Estimation Model">Offer Amount Estimation Model</h4>
         <div>A model that takes in given order data and estimates the amount of offers that the order will receive</div>  
-        <h3 class="Rate Average Prediction Model">Rate Average Prediction Model</h3>
+        <h4 class="Rate Average Prediction Model">Rate Average Prediction Model</h4>
         <div>A model that takes in given order data and estimates the average of the rates of the offers that the order will receive</div>
-        <h3 class="Rate Standard Deviation Prediction Model">Rate Standard Deviation Prediction Model</h3>
+       <div><b>Method:</b> Linear Regression</div>
+       <div><b>Results:</b> Correlation of 85% between Predicted and Actual</div>
+        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/avg_model_r2_scatterplot.png" alt="R2">
+        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/avg_model_feature_importance.png" alt="Top Features">
+        <h4 class="Rate Standard Deviation Prediction Model">Rate Standard Deviation Prediction Model</h4>
         <div>A model that takes in given order data and estimates the standard deviation of the rates of the offers that the order will receive</div>
+        <div><b>Method:</b> Ordinalize as a binary classification ("low" StDev is 0, "high" is the median StDev), and applied Random Forest Classification for 2 classes</div>
+        <div><b>Results:</b> ROC AUC Score of 65-68%</div>
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/stdev_pca_scatterplot.png" alt="PCA">
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/stdev_confusion_matrix.png" alt="Confusion Matrix">
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapsttone/main/_assets/imgs/stdev_model_feature_importance.png" alt="Top Features">
+        <h4 class="(Optional) Pooling Classification Model">Pooling Classification Model</h4>
+      <div>An <b>optional</b> model that takes in given order data and classifies on whether or not the order will receive (at any point) an offer in which it needs to be pooled. This pooling model is optional in that if its predictions are used as an extra feature for the standard deviation model, then it's been observed that the standard deviation model's accuracy will boost from 67% to 70%</div>
+        <div><b>Method:</b> Logistic Regression; if for a given order, it receives offers where more than half of is pooled, it is classified as Yes</div>
+        <div><b>Results:</b> ROC AUC Score of 80%</div>
+        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/pooled_metrics.png" alt="Pooled Metrics">
       <h2 class="Findings and Results">Findings and Results</h2>
-      
-      <img src="{{ site.github.repository_url }}/assets/regions_as_clusters.png" alt="Clustering of the Zip3's into Regions">  
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/map_shipping_routes_by_order_amount.png" alt="Shipping Routes By Order Amount">  
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/map_shipping_routes_by_rates.png" alt="Shipping Routes By Rates">  
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/map_zipcode_amount.png" alt="Clustering of the Zip3's into Regions">  
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/regions_as_clusters.png" alt="Clustering of the Zip3's into Regions">  
         
       
 
