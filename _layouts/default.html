@@ -55,12 +55,15 @@
         </li>
 
       </ol>
+      <h2 class="Data Description"> Data Description</h2>
+      <div>The full dataset includes 2 tables which contain: A) the orders, and descriptive information about it (Order Time, Pickup Deadline, accommodating conditions for its mode of delivery such as transport mode, refrigeration, and hazardness, etc); B) The offers by carriers to deliver said orders - this would be a many-to-one relationship, with the reference number column (assuming it’s a singleton list) being the foreign key. The offers table includes mostly information such as the rate of the offer, whether it is pooled or not, whether it was selected, and whether it was uncovered. We also created a supplemental dataset that maps 3 digit zip code identifiers to latitude and longitude coordinates.</div>
 
-      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/secretary_problem.png" alt="A Diagram of the Secretary Problem">
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/DataExplainedGood.png" alt="Dataset Flow Chart">
 
             <h2 class="Flock Freight and The Offer Acceptance Problem"> Flock Freight and The Offer Acceptance Problem</h2>
       <h2 class="Our Model Approach"> Our Model Approach</h2>
         <div>The model will comprise of 3 sub-models that together advise the decision making on whether an offer is acceptable or not, for a given order</div>
+        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/ModelFlowChart.png" alt="Dataset Flow Chart">  
         
 
         <h4 class="Offer Amount Estimation Model">Offer Amount Estimation Model</h4>
