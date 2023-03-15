@@ -1,4 +1,4 @@
-# This is the Github Pages repository for Offer Acceptance in the Freight Industry.
+# Offer Acceptance in the Freight Industry
 
 This project was devloped by Radu Manea, Benson Duong, Keagan benson and Nima Yazdani in DSC180-A007 with Matt Stirling and Flock Freight
 
