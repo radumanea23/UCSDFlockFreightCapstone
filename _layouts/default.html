@@ -83,14 +83,14 @@
         <div>A model that takes in given order data and estimates the standard deviation of the rates of the offers that the order will receive</div>
         <div><b>Method:</b> Ordinalize as a binary classification ("low" StDev is 0, "high" is the median StDev), and applied Random Forest Classification for 2 classes</div>
         <div><b>Results:</b> ROC AUC Score of 65-68%</div>
-      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/stdev_pca_scatterplot.png" alt="PCA">
       <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/stdev_confusion_matrix.png" alt="Confusion Matrix">
       <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapsttone/main/_assets/imgs/stdev_model_feature_importance.png" alt="Top Features">
+      <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapsttone/main/_assets/imgs/num_model_feature_importance.png" alt="Top Features">
         <h4 class="(Optional) Pooling Classification Model">Pooling Classification Model</h4>
       <div>An <b>optional</b> model that takes in given order data and classifies on whether or not the order will receive (at any point) an offer in which it needs to be pooled. This pooling model is optional in that if its predictions are used as an extra feature for the standard deviation model, then it's been observed that the standard deviation model's accuracy will boost from 67% to 70%</div>
         <div><b>Method:</b> Logistic Regression; if for a given order, it receives offers where more than half of is pooled, it is classified as Yes</div>
         <div><b>Results:</b> ROC AUC Score of 80%</div>
-        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/pooled_metrics.png" alt="Pooled Metrics">
+        <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapsttone/main/_assets/imgs/pooled_model_feature_importance.png" alt="Top Features">
       <h2 class="Findings and Results">Findings and Results</h2>
       <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/map_shipping_routes_by_order_amount.png" alt="Shipping Routes By Order Amount">  
       <img src="https://raw.githubusercontent.com/radumanea23/UCSDFlockFreightCapstone/main/_assets/imgs/map_shipping_routes_by_rates.png" alt="Shipping Routes By Rates">  
