@@ -78,7 +78,7 @@
        <div><b>Method:</b> Linear Regression</div>
        <div><b>Results:</b> Correlation of 85% between Predicted and Actual</div>
         <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/generated_visualizations/avg_model_r2_scatter.png" alt="R2">
-        <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/ggenerated_visualizations/avg_model_feature_importances.png" alt="Top Features">
+        <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/generated_visualizations/avg_model_feature_importances.png" alt="Top Features">
         <div>These are the most influential features of the avg model, either strongest in positive or negative correlation or otherwise determined by the model. Categorical features follow the format "FEATURE=CLASS", so "DEST_GROUP=4" would mean order with a destination zipcode closest to region 4 (see the regions cluster map in findings to see what group numbers correspond to which regions). 
       </div>
           <h4 class="Rate Standard Deviation Prediction Model">Rate Standard Deviation Prediction Model</h4>
@@ -87,8 +87,7 @@
         <div><b>Results:</b> ROC AUC Score of 65-68%</div>
       <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/generated_visualizations/sd_model_confusion_matrix.png" alt="Confusion Matrix">
       <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/generated_visualizations/sd_model_feature_importances.png" alt="Top Features">
-      <img src="https://raw.githubusercontent.com/KeaganBenson/DSC180Flock/main/generated_visualizations/num_model_feature_importances.png" alt="Top Features">
-              <div>These are the most influential features of the stdev submodel, and in terms of a line drawn between the destination and origin, the average of population density, logged land area (see LOG(ALAND)), population, and logged temperature and precipitation of the encountered counties during the months of the order, and the (logged) amount of operating zipcode carriers encountered along the way (LOG(OPER_COUNT)), and information about proximity of the order's origin zipcode to regions (again, refer to the regions cluster map at the bottom) 
+              <div>These are the most influential features of the st dev submodel, and in terms of a line drawn between the destination and origin, the average of population density, logged land area (see LOG(ALAND)), population, and logged temperature and precipitation of the encountered counties during the months of the order, and the (logged) amount of operating zipcode carriers encountered along the way (LOG(OPER_COUNT)), and information about proximity of the order's origin zipcode to regions (again, refer to the regions cluster map at the bottom) 
       </div>
         <h4 class="(Optional) Pooling Classification Model">Pooling Classification Model</h4>
       <div>An <b>optional</b> model that takes in given order data and classifies on whether or not the order will receive (at any point) an offer in which it needs to be pooled. This pooling model is optional in that if its predictions are used as an extra feature for the standard deviation model, then it's been observed that the standard deviation model's accuracy will boost from 67% to 70%</div>
